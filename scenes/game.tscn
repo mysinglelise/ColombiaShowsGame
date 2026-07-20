@@ -110,10 +110,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.01706981, 0.9559093, 2.9872167, 5.13494, 6.0055003, 7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0.01, 1.07, 2.9666667, 6.0333333, 7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(-1070.9999, 849), Vector2(-1070.9999, 849), Vector2(-1003, 414.99994), Vector2(-820, -48), Vector2(-439, -19.999996), Vector2(-439, -20)]
+"values": [Vector2(-1094, 877), Vector2(-1094, 877), Vector2(-853.9999, -274), Vector2(-434, -25), Vector2(-434, -25)]
 }
 
 [sub_resource type="Animation" id="Animation_mfdv2"]
@@ -1402,34 +1402,12 @@ scale = Vector2(1.7358925, 1.6009568)
 position = Vector2(-949.99994, 822.99994)
 scale = Vector2(1.7, 1.7)
 
-[node name="coin4" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-966, 754)
-
-[node name="coin5" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-868, 797)
-scale = Vector2(0.8000195, 0.8271074)
-
-[node name="coin9" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-997, 771)
-scale = Vector2(0.76, 0.84000003)
-
 [node name="coin12" parent="coins" instance=ExtResource("12_suyxu")]
 position = Vector2(-341, -160)
-
-[node name="coin11" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-904, 787)
-scale = Vector2(0.68, 0.8)
-
-[node name="coin2" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-908, 901)
 
 [node name="coin7" parent="coins" instance=ExtResource("12_suyxu")]
 position = Vector2(-985, 850)
 scale = Vector2(1.48, 1.76)
-
-[node name="coin10" parent="coins" instance=ExtResource("12_suyxu")]
-position = Vector2(-795.99994, 850)
-scale = Vector2(0.6397841, 0.6770916)
 
 [node name="game manager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -1457,8 +1435,8 @@ autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="Confettis" parent="." instance=ExtResource("22_m4url")]
-position = Vector2(-811.00006, 815)
-scale = Vector2(-0.5536166, 0.4001802)
+position = Vector2(-823.00006, 830)
+scale = Vector2(-0.7136166, 0.4001802)
 
 [node name="botero" parent="." instance=ExtResource("27_7025r")]
 position = Vector2(-964, 943)
@@ -1467,7 +1445,7 @@ scale = Vector2(-0.44020522, 0.38594863)
 [node name="UFOS" type="Node" parent="."]
 
 [node name="UFO2" parent="UFOS" instance=ExtResource("15_wljb1")]
-position = Vector2(-1070.9999, 849)
+position = Vector2(-1094, 877)
 scale = Vector2(0.004, 0.004)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="UFOS/UFO2"]

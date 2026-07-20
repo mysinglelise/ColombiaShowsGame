@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-var max_coins = 11  # Nombre total d'étoiles
+var max_coins = 4  # Nombre total d'étoiles
 
 @export var reward_scene: PackedScene  # Scène cadeau à configurer dans l'inspecteur
 
