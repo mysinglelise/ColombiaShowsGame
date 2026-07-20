@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6f6cdgc7n0hg"]
+
+[ext_resource type="PackedScene" uid="uid://da8kqavvuqk77" path="res://scenes/joel_juggle.tscn" id="1_v31sk"]
+[ext_resource type="FontFile" uid="uid://dvk5jqi4h2j37" path="res://assets/the moon game /brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf" id="2_qr7ta"]
+[ext_resource type="FontFile" uid="uid://c018jvqwk1xf8" path="res://assets/the moon game /brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_qr7ta"]
+
+[node name="victory" type="Node2D"]
+
+[node name="joel juggle" parent="." instance=ExtResource("1_v31sk")]
+position = Vector2(682, 371.99997)
+scale = Vector2(0.344672, 0.3234652)
+
+[node name="you win" type="Label" parent="."]
+offset_left = 419.0
+offset_top = 131.0
+offset_right = 805.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(1, 0.20392157, 0.05882353, 1)
+theme_override_fonts/font = ExtResource("2_qr7ta")
+theme_override_font_sizes/font_size = 57
+text = "YOU WIN
+"
+horizontal_alignment = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.023529412, 0.06666667, 0.22352941, 1)
+show_behind_parent = true
+offset_left = -2189.0
+offset_top = -999.0
+offset_right = 2874.0
+offset_bottom = 1658.0
+
+[node name="text" type="Label" parent="."]
+offset_left = 278.0
+offset_top = 68.0
+offset_right = 1307.0
+offset_bottom = 98.0
+scale = Vector2(0.6458999, 0.68)
+theme_override_colors/font_color = Color(1, 0.9490196, 0.69411767, 1)
+theme_override_fonts/font = ExtResource("3_qr7ta")
+theme_override_font_sizes/font_size = 33
+text = "You followed the moon Home
+ and You've reunited the Gauche Kids!!!"
+horizontal_alignment = 1

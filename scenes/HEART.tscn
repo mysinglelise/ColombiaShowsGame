@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://dmlltxfkctwdv"]
+
+[ext_resource type="Texture2D" uid="uid://cmngrf0fi4e0j" path="res://assets/maps/heart_spritesheet.png" id="1_dg8he"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43xu3"]
+atlas = ExtResource("1_dg8he")
+region = Rect2(0, 0, 644, 620)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alygu"]
+atlas = ExtResource("1_dg8he")
+region = Rect2(644, 0, 644, 620)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gruu"]
+atlas = ExtResource("1_dg8he")
+region = Rect2(1288, 0, 644, 620)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gikaf"]
+atlas = ExtResource("1_dg8he")
+region = Rect2(1932, 0, 644, 620)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81fqy"]
+atlas = ExtResource("1_dg8he")
+region = Rect2(2576, 0, 644, 620)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsol0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43xu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alygu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gruu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gikaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_81fqy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ZOE" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(2.0000057, -3.999999)
+scale = Vector2(0.6361252, 0.57722855)
+sprite_frames = SubResource("SpriteFrames_hsol0")
+autoplay = "default"
+frame_progress = 0.6475269

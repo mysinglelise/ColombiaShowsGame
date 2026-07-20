@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cs7ugrvna8egi"]
+
+[ext_resource type="Texture2D" uid="uid://0b4b2gm778f5" path="res://assets/maps/Capture d’écran 2026-01-03 à 00.25.00.png" id="1_rotgi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rotgi"]
+size = Vector2(29440, 14506)
+
+[node name="UFO" type="AnimatableBody2D"]
+position = Vector2(0, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-39033, 13738)
+scale = Vector2(-116.35589, 96.45763)
+texture = ExtResource("1_rotgi")
+offset = Vector2(-88.14981, 36.087997)
+region_enabled = true
+region_rect = Rect2(-0.20872498, -11.357544, 1133.6449, 962.5248)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7041, -9836)
+shape = SubResource("RectangleShape2D_rotgi")
+one_way_collision_margin = 0.0

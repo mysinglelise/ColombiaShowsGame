@@ -1,0 +1,125 @@
+[gd_scene load_steps=18 format=3 uid="uid://djstjb513k06r"]
+
+[ext_resource type="Texture2D" uid="uid://dmwmow4mk5ajf" path="res://assets/maps/Happy Birthday Rainbow Sticker(2).png" id="1_evvjj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_busw6"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(0, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2gwve"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(270, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2638"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(540, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mgrg"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(810, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7gv2"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(1080, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jm6ts"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(0, 480, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyw8v"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(270, 480, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aika8"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(540, 480, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aexci"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(810, 480, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ioayv"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(1080, 480, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eooas"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(0, 960, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sbgre"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(270, 960, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5r7g"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(540, 960, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25omj"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(810, 960, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yp0is"]
+atlas = ExtResource("1_evvjj")
+region = Rect2(1080, 960, 270, 480)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tqljq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_busw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2gwve")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2638")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mgrg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7gv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jm6ts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyw8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aika8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aexci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ioayv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eooas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sbgre")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5r7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_25omj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yp0is")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Confettis" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_tqljq")
+autoplay = "default"
+frame_progress = 0.8410886

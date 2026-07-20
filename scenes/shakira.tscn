@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://cocf16ibgv6di"]
+
+[ext_resource type="Texture2D" uid="uid://ckw4usksgtpgh" path="res://assets/maps/shakira SPRITE.png" id="1_h4v4w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_14eua"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(0, 0, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwuic"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(220, 0, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_216w0"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(0, 167, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t30p7"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(220, 167, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dwop"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(0, 334, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwvbu"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(220, 334, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_djch3"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(0, 501, 220, 167)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_83aj2"]
+atlas = ExtResource("1_h4v4w")
+region = Rect2(220, 501, 220, 167)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bru8e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_14eua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwuic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_216w0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t30p7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dwop")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwvbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djch3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_83aj2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="SHAKIRA" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_bru8e")
+autoplay = "default"
+frame_progress = 0.42800102

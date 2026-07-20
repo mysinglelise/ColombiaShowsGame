@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwwon5ecao7wx"]
+
+[ext_resource type="Texture2D" uid="uid://dkps5b3ogg5w0" path="res://assets/the moon game /dpad_element_east_highlight.png" id="1_2t1dn"]
+[ext_resource type="Script" path="res://touchcontrols.gd" id="1_67tn3"]
+[ext_resource type="Texture2D" uid="uid://blps274v5tuxh" path="res://assets/the moon game /dpad_element_west_highlight.png" id="2_67tn3"]
+[ext_resource type="Texture2D" uid="uid://72gcyjfww07y" path="res://assets/the moon game /dpad_element_south_highlight.png" id="3_by1k7"]
+
+[node name="touchcontrols" type="CanvasLayer"]
+script = ExtResource("1_67tn3")
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2(14.999999, 513)
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("1_2t1dn")
+action = "move left"
+visibility_mode = 1
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2(179, 515)
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("2_67tn3")
+action = "move right"
+
+[node name="jump" type="TouchScreenButton" parent="."]
+position = Vector2(1038, 511)
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("3_by1k7")
+action = "jump"
+
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
+[connection signal="released" from="left" to="." method="_on_left_released"]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="released" from="right" to="." method="_on_right_released"]
+[connection signal="pressed" from="jump" to="." method="_on_jump_pressed"]
+[connection signal="released" from="jump" to="." method="_on_jump_released"]

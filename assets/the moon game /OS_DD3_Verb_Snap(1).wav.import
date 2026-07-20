@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cidsnhgeg7vc2"
+path="res://.godot/imported/OS_DD3_Verb_Snap(1).wav-6fb3c0520862df3923daf2505659e1ae.sample"
+
+[deps]
+
+source_file="res://assets/the moon game /OS_DD3_Verb_Snap(1).wav"
+dest_files=["res://.godot/imported/OS_DD3_Verb_Snap(1).wav-6fb3c0520862df3923daf2505659e1ae.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

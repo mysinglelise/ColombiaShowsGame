@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpjd43581pimx"]
+
+[ext_resource type="AudioStream" uid="uid://d3w6p0lmw3as7" path="res://LMA CODE V0.wav" id="1_05ggv"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_05ggv")
+volume_db = 0.321
+autoplay = true
+max_distance = 8000.0
+bus = &"music"

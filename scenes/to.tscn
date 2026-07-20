@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvk38plxbg14o"]
+
+[ext_resource type="Texture2D" uid="uid://bs4qmtjwm77p8" path="res://assets/the moon game /brackeys_platformer_assets/sprites/baguette_real_spritesheet.png" id="1_yr1qv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgvo3"]
+atlas = ExtResource("1_yr1qv")
+region = Rect2(0, 0, 634, 610)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w4083"]
+atlas = ExtResource("1_yr1qv")
+region = Rect2(634, 0, 634, 610)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpq5a"]
+atlas = ExtResource("1_yr1qv")
+region = Rect2(1268, 0, 634, 610)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2si8"]
+atlas = ExtResource("1_yr1qv")
+region = Rect2(1902, 0, 634, 610)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lsfqy"]
+atlas = ExtResource("1_yr1qv")
+region = Rect2(2536, 0, 634, 610)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
+animations = [{
+"frames": [{
+"duration": 0.01,
+"texture": SubResource("AtlasTexture_mgvo3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w4083")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpq5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2si8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lsfqy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TO" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(1.9999924, -14.000011)
+scale = Vector2(0.57097787, 0.4754098)
+sprite_frames = SubResource("SpriteFrames_4d7sh")
+autoplay = "default"
+frame_progress = 0.1536204

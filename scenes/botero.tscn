@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgotts0rtxwbj"]
+
+[ext_resource type="Texture2D" uid="uid://djbo6h6ffjdo1" path="res://assets/maps/botero dance.png" id="1_jgavy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pp64t"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(0, 0, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0juo"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(158, 0, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btss7"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(316, 0, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luh5b"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(0, 258, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63jnb"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(158, 258, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbum2"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(316, 258, 158, 258)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpdkc"]
+atlas = ExtResource("1_jgavy")
+region = Rect2(0, 516, 158, 258)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dl7q7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pp64t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0juo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btss7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luh5b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63jnb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbum2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpdkc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="botero" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_dl7q7")
+autoplay = "default"
+frame_progress = 0.58970195

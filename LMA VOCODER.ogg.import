@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dgxq0fhta37q0"
+path="res://.godot/imported/LMA VOCODER.ogg-15c9c02db9bde5cc7db4ed87037d8353.oggvorbisstr"
+
+[deps]
+
+source_file="res://LMA VOCODER.ogg"
+dest_files=["res://.godot/imported/LMA VOCODER.ogg-15c9c02db9bde5cc7db4ed87037d8353.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
